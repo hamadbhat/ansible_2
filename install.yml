@@ -1,0 +1,12 @@
+---
+- name: first pb on Ubuntu
+  hosts: localhost
+  become: true
+  tasks:
+    - name:  the host is reponding
+      ping:
+
+    - name: installing the apache2
+      apt:
+        name: apache2
+

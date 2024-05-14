@@ -1,0 +1,13 @@
+---
+- name: first pb on Ubuntu
+  hosts: localhost
+  become: true
+  tasks:
+    - name:  the host is reponding
+      ping:
+
+    - name: removeing the apache2
+      apt:
+        name: apache2
+        state: absent
+

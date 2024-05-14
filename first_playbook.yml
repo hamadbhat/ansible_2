@@ -1,0 +1,9 @@
+---
+- name: first pb on Ubuntu
+  hosts: localhost
+
+  tasks:
+  - name:  connecting to localhost
+    ping:
+  - name: "print output"
+    debug: msg="It's working" 
